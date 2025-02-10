@@ -11,6 +11,6 @@ public class Pizza {
         this.salsa = salsa;
         this.formaggio = formaggio;
         this.extra = extra;
-        System.out.println("Pizza da fare:" + impasto + "," + salsa + "," + formaggio + "," + extra);
+        // System.out.println("Pizza da fare:" + impasto + "," + salsa + "," + formaggio + "," + extra);
     }
 }

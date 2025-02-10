@@ -1,7 +1,5 @@
 package corsoJava;
 
-import java.util.Iterator;
-
 public class Array {
 
 	public static void main(String[] args) {
