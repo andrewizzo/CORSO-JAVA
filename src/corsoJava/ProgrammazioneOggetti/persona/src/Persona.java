@@ -21,28 +21,34 @@ public class Persona {
     String nome;
     String cognome;
     int eta;
-    String colorePreferito;
+    // String colorePreferito;
     static int numeroPersone;
     
-    Persona(String nome,String cognome,int eta,String colorePreferito){
+    Persona(String nome,String cognome,int eta){
         this.nome = nome;
         this.cognome = cognome;
         this.eta = eta;
-        this.colorePreferito = colorePreferito;
+        // this.colorePreferito = colorePreferito;
         numeroPersone++;
     }
 
     public String toString(){
-        String stringa = this.nome + " " + this.cognome + " " + this.eta + " " + colorePreferito;
+        // String stringa = this.nome + " " + this.cognome + " " + this.eta + " " + colorePreferito;
+        String stringa = this.nome + " " + this.cognome + " " + this.eta;
         return stringa;
     }
 
-    void saluta(Persona personaDaSalutare){
-        System.out.println("Ciao " + personaDaSalutare.nome + " io sono " + nome);
-        System.out.println("So che hai: " + personaDaSalutare.eta + " e il tuo colore preferito è: " + personaDaSalutare.colorePreferito);
-    }
+    // void saluta(Persona personaDaSalutare){
+    //     System.out.println("Ciao " + personaDaSalutare.nome + " io sono " + nome);
+    //     // System.out.println("So che hai: " + personaDaSalutare.eta + " e il tuo colore preferito è: " + personaDaSalutare.colorePreferito);
+    //     // System.out.println("So che hai: " + personaDaSalutare.eta);
+    // }
 
     static void mostraNumPers(){
         System.out.println("Numero Persone: " + numeroPersone);
+    }
+
+    void saluta(){
+        System.out.println("Ciao!");
     }
 }
