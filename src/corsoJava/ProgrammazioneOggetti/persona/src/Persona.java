@@ -18,24 +18,29 @@ public class Persona {
     //     System.out.println("Sto pensando...");
     // }
 
-    String nome;
-    String cognome;
-    int eta;
+    private String nome;
+    private String cognome;
+    // int eta;
     // String colorePreferito;
     static int numeroPersone;
     
-    Persona(String nome,String cognome,int eta){
+    Persona(String nome,String cognome){
         this.nome = nome;
         this.cognome = cognome;
-        this.eta = eta;
+        // this.eta = eta;
         // this.colorePreferito = colorePreferito;
         numeroPersone++;
     }
 
-    public String toString(){
+    Persona(Persona persona){
+        this.setNome(persona.getNome());
+        this.setCognome(persona.getCognome());
+    }
+
+    public String toString(String nomeIntero){
         // String stringa = this.nome + " " + this.cognome + " " + this.eta + " " + colorePreferito;
-        String stringa = this.nome + " " + this.cognome + " " + this.eta;
-        return stringa;
+        nomeIntero = this.getNome() + " " + this.getCognome();
+        return nomeIntero;
     }
 
     // void saluta(Persona personaDaSalutare){
@@ -50,5 +55,28 @@ public class Persona {
 
     void saluta(){
         System.out.println("Ciao!");
+    }
+
+    public String setNome(String nome){
+        this.nome = nome;
+        return nome;
+    }
+
+    public String setCognome(String cognome){
+        this.cognome = cognome;
+        return cognome;
+    }
+
+    public String getNome(){
+        return nome;
+    }
+
+    public String getCognome(){
+        return cognome;
+    }
+
+    public void copyPersona(Persona persona){
+        this.setNome(persona.getNome());
+        this.setCognome(persona.getCognome());
     }
 }

@@ -2,11 +2,11 @@ package corsoJava.ProgrammazioneOggetti.persona.src;
 
 public class Insegnante extends Persona{
 
-    String materiaDaInsegnare = "Storia";
+    String materia;
 
-    Insegnante(String nome, String cognome, int eta) {
-        super(nome, cognome, eta);
-        
+    Insegnante(String nome, String cognome, String materia) {
+        super(nome, cognome);
+        this.materia = materia;
     }
 
     void insegna(){

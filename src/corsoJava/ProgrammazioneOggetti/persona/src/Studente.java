@@ -2,12 +2,12 @@ package corsoJava.ProgrammazioneOggetti.persona.src;
 
 public class Studente extends Persona{
 
-    String materiPreferita = "Matematica";
-    String classe = "5a";
+    String materiPreferita;
+    String classe;
     int[] voti = {3,4,5,6,7,8,9};
 
-    Studente(String nome, String cognome, int eta) {
-        super(nome, cognome, eta);
+    Studente(String nome, String cognome, String materiaPreferita, String classe) {
+        super(nome, cognome);
         
     }
 
